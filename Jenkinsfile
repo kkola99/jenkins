@@ -21,14 +21,16 @@ pipeline {
                 sh "sudo chmod 777 /var/www/html/index.html"
             }
             }
+        }
+        }
             stage('Deploying now'){
             agent any
             steps {
                 sh "curl localhost:80"
             }
             }
-        }
-        }
+        
+        
     }
 }
 
