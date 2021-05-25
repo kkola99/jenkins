@@ -28,9 +28,7 @@ pipeline {
             steps {
                 sh "curl localhost:80"
             }
-            }
-        
-        
+            } 
     }
 }
 
